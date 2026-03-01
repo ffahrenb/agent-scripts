@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# pullall — git pull in all active repos under ~/Projects
+# Usage: pullall
+
+BASE="$HOME/Projects"
+
+find "$BASE" -maxdepth 3 -name ".git" -type d \
+  | grep -vE "/(archive|resources|oss)/" \
+  | sed 's|/.git||' \
+  | sort \
+  | while read -r repo; do
+      echo "▸ ${repo#"$BASE/"}"
+      git -C "$repo" pull --ff-only 2>&1 | sed 's/^/  /'
+      echo
+    done
