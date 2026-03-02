@@ -1,10 +1,10 @@
 ---
 name: domain-dns-ops
 description: >
-  Domain/DNS ops across Cloudflare, DNSimple, Namecheap for Peter. Use for onboarding zones to Cloudflare, flipping nameservers, setting redirects (Page Rules/Rulesets/Workers), updating redirect-worker mappings, and verifying DNS/HTTP. Source of truth: ~/Projects/manager.
+  Domain/DNS ops across Cloudflare, DNSimple, Namecheap for Florian. Use for onboarding zones to Cloudflare, flipping nameservers, setting redirects (Page Rules/Rulesets/Workers), updating redirect-worker mappings, and verifying DNS/HTTP. Source of truth: ~/Projects/manager.
 ---
 
-# Domain/DNS Ops (Peter)
+# Domain/DNS Ops (Florian)
 
 This skill is a thin router: use `~/Projects/manager` as truth, run the repo scripts, follow the checklists.
 
@@ -51,6 +51,6 @@ If you changed anything in `~/Projects/manager` (docs, worker, scripts, mappings
 
 ## Guardrails
 
-- Don’t touch `.md` lore domains or `steipete.md` unless explicitly asked; check `~/Projects/manager/DOMAINS.md`.
+- Confirm which domains are Florian’s before making changes; check `~/Projects/manager/DOMAINS.md`.
 - Confirm registrar before debugging CF “invalid nameservers” (often “wrong registrar”).
 - Prefer reversible steps; verify after each change (NS → DNS → redirect).
