@@ -5,7 +5,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
 - Contact: Florian Fahrenbach (@ffahrenb, florian.fahrenbach@googlemail.com).
-- Workspace: `~/Projects` (`C:\Users\flori\Projects`).
+- Workspace: `~/Projects`.
 - Eigene aktive Projekte: direkt in `~/Projects/<name>`.
 - Aktive Arbeits-Projekte (Hawa): `~/Projects/work/`.
 - Referenzmaterial (awesome-lists, roadmaps, cheatsheets): `~/Projects/resources/`.
@@ -31,7 +31,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Platform
 - OS: Windows 11 Pro for Workstations.
-- Shell: bash (Git Bash). Always use Unix paths (`~/` or `/c/Users/flori/`), not Windows (`C:\`).
+- Shell: bash (Git Bash). Always use Unix paths (`~/`), not Windows (`C:\`).
 - No `brew`; use `winget`, `scoop`, or bun/npm globals instead.
 - `trash` may not be on PATH yet — check before using; fallback: move to Recycle Bin manually.
 
